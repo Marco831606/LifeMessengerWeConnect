@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let chats = Chat.lifeMessengerChat
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            List{
+                ForEach(chats) { chat in
+                    ChatList(chat: chat)
+                }
+            }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Chatroom")
+            .navigationBarItems(trailing: Button(action:{}) {
+                Image(systemName: "square.and.pencil")
+            })
         }
-        .padding()
     }
 }
 

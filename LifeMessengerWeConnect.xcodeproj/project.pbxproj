@@ -14,6 +14,9 @@
 		4643944929A2715300C35040 /* LifeMessengerWeConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643944829A2715300C35040 /* LifeMessengerWeConnectTests.swift */; };
 		4643945329A2715300C35040 /* LifeMessengerWeConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643945229A2715300C35040 /* LifeMessengerWeConnectUITests.swift */; };
 		4643945529A2715300C35040 /* LifeMessengerWeConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643945429A2715300C35040 /* LifeMessengerWeConnectUITestsLaunchTests.swift */; };
+		4643946229A273C200C35040 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946129A273C200C35040 /* ChatList.swift */; };
+		4643946529A27D3400C35040 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946429A27D3400C35040 /* ChatModel.swift */; };
+		4643946729A28A7500C35040 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946629A28A7500C35040 /* DateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		4643944E29A2715300C35040 /* LifeMessengerWeConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeMessengerWeConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4643945229A2715300C35040 /* LifeMessengerWeConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeMessengerWeConnectUITests.swift; sourceTree = "<group>"; };
 		4643945429A2715300C35040 /* LifeMessengerWeConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeMessengerWeConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4643946129A273C200C35040 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		4643946429A27D3400C35040 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		4643946629A28A7500C35040 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 		4643943629A2715300C35040 /* LifeMessengerWeConnect */ = {
 			isa = PBXGroup;
 			children = (
-				4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */,
+				4643946329A27D2300C35040 /* Model */,
+				4643946129A273C200C35040 /* ChatList.swift */,
+				4643946629A28A7500C35040 /* DateView.swift */,
 				4643943929A2715300C35040 /* ContentView.swift */,
+				4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */,
 				4643943B29A2715300C35040 /* Assets.xcassets */,
 				4643943D29A2715300C35040 /* Preview Content */,
 			);
@@ -125,6 +134,14 @@
 				4643945429A2715300C35040 /* LifeMessengerWeConnectUITestsLaunchTests.swift */,
 			);
 			path = LifeMessengerWeConnectUITests;
+			sourceTree = "<group>";
+		};
+		4643946329A27D2300C35040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4643946429A27D3400C35040 /* ChatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4643946729A28A7500C35040 /* DateView.swift in Sources */,
 				4643943A29A2715300C35040 /* ContentView.swift in Sources */,
+				4643946229A273C200C35040 /* ChatList.swift in Sources */,
 				4643943829A2715300C35040 /* LifeMessengerWeConnectApp.swift in Sources */,
+				4643946529A27D3400C35040 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
