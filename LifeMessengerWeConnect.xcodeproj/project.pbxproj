@@ -17,6 +17,12 @@
 		4643946229A273C200C35040 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946129A273C200C35040 /* ChatList.swift */; };
 		4643946529A27D3400C35040 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946429A27D3400C35040 /* ChatModel.swift */; };
 		4643946729A28A7500C35040 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946629A28A7500C35040 /* DateView.swift */; };
+		4643946A29A38EE000C35040 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946929A38EE000C35040 /* TabView.swift */; };
+		4643946E29A3924A00C35040 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946D29A3924A00C35040 /* SplashScreenView.swift */; };
+		4643947329A395EE00C35040 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643947229A395EE00C35040 /* ChatViewModel.swift */; };
+		4643947529A39BFD00C35040 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643947429A39BFD00C35040 /* ChatView.swift */; };
+		4643947B29A62AD600C35040 /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643947A29A62AD600C35040 /* OrganizerView.swift */; };
+		4643948729A655C400C35040 /* ChatOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643948629A655C400C35040 /* ChatOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		4643946129A273C200C35040 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		4643946429A27D3400C35040 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		4643946629A28A7500C35040 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		4643946929A38EE000C35040 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		4643946D29A3924A00C35040 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		4643947229A395EE00C35040 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		4643947429A39BFD00C35040 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4643947A29A62AD600C35040 /* OrganizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
+		4643948629A655C400C35040 /* ChatOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +112,16 @@
 		4643943629A2715300C35040 /* LifeMessengerWeConnect */ = {
 			isa = PBXGroup;
 			children = (
+				4643947729A62A9B00C35040 /* Organizer */,
+				4643947629A62A8100C35040 /* ChatList */,
+				4643946F29A394B400C35040 /* ViewModel */,
+				4643946829A38EA900C35040 /* View */,
 				4643946329A27D2300C35040 /* Model */,
-				4643946129A273C200C35040 /* ChatList.swift */,
-				4643946629A28A7500C35040 /* DateView.swift */,
 				4643943929A2715300C35040 /* ContentView.swift */,
 				4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */,
 				4643943B29A2715300C35040 /* Assets.xcassets */,
 				4643943D29A2715300C35040 /* Preview Content */,
+				4643946D29A3924A00C35040 /* SplashScreenView.swift */,
 			);
 			path = LifeMessengerWeConnect;
 			sourceTree = "<group>";
@@ -142,6 +157,41 @@
 				4643946429A27D3400C35040 /* ChatModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4643946829A38EA900C35040 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4643946129A273C200C35040 /* ChatList.swift */,
+				4643946629A28A7500C35040 /* DateView.swift */,
+				4643946929A38EE000C35040 /* TabView.swift */,
+				4643947429A39BFD00C35040 /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4643946F29A394B400C35040 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4643947229A395EE00C35040 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4643947629A62A8100C35040 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				4643948629A655C400C35040 /* ChatOverView.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		4643947729A62A9B00C35040 /* Organizer */ = {
+			isa = PBXGroup;
+			children = (
+				4643947A29A62AD600C35040 /* OrganizerView.swift */,
+			);
+			path = Organizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4643947B29A62AD600C35040 /* OrganizerView.swift in Sources */,
+				4643946E29A3924A00C35040 /* SplashScreenView.swift in Sources */,
+				4643948729A655C400C35040 /* ChatOverView.swift in Sources */,
 				4643946729A28A7500C35040 /* DateView.swift in Sources */,
+				4643947329A395EE00C35040 /* ChatViewModel.swift in Sources */,
 				4643943A29A2715300C35040 /* ContentView.swift in Sources */,
+				4643947529A39BFD00C35040 /* ChatView.swift in Sources */,
 				4643946229A273C200C35040 /* ChatList.swift in Sources */,
 				4643943829A2715300C35040 /* LifeMessengerWeConnectApp.swift in Sources */,
+				4643946A29A38EE000C35040 /* TabView.swift in Sources */,
 				4643946529A27D3400C35040 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

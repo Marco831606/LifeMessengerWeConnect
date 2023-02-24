@@ -8,7 +8,7 @@
 import Foundation
 
 struct Chat: Identifiable {
-    var id: UUID { person.id}
+    var id: UUID { person.id }
     let person: Person
     var messages:[Message]
     var hasUnreadMessage = false
@@ -23,7 +23,8 @@ struct Person: Identifiable {
 struct Message: Identifiable {
     
     enum MessageType {
-        case Sent, Received
+        case Sent
+        case Received
     }
     
     
@@ -47,14 +48,19 @@ extension Chat {
     
     static let lifeMessengerChat = [
         Chat(person: Person(name: "Andi", imgString: "Avatar1"), messages: [
-            Message("Hey Andi, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1)),
-            Message("Hey Marcel, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
-            Message("Hey Heinrich, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
-            Message("Hey Timo, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 4)),
-            Message("Hey Lukas, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("Hey Andi", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("wie geht es dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("Hast du heute Zeit?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("mir geht es gut danke und wie geht es dir? ", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
+            Message("klar gegen 13 Uhr?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
+            Message("Hey Andi", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("wie geht es dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("Hast du heute Zeit?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),
+            Message("mir geht es gut danke und wie geht es dir? ", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
+            Message("klar gegen 13 Uhr?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
         ], hasUnreadMessage: true),
         
-        Chat(person: Person(name: "Marco", imgString: "Avatar6"), messages: [
+        Chat(person: Person(name: "Marco", imgString: "Messenger"), messages: [
             Message("Hey Andi, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 1)),
             Message("Hey Marcel, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 2)),
             Message("Hey Heinrich, wie gehts dir?", type: .Sent, date: Date(timeIntervalSinceNow: -86400 * 3)),

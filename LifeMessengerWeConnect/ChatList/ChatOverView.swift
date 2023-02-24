@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  ChatOverView.swift
 //  LifeMessengerWeConnect
 //
-//  Created by Marco Molisano on 19.02.23.
+//  Created by Marco Molisano on 22.02.23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChatOverView: View {
     
     let chats = Chat.lifeMessengerChat
     
@@ -29,7 +29,7 @@ struct ContentView: View {
                         NavigationLink(destination: {
                             ChatView(chat: chat)
                                 .environmentObject(viewModel)
-                                .foregroundColor(.blue)
+                            
                         }) {
                             EmptyView()
                         }
@@ -49,11 +49,11 @@ struct ContentView: View {
                             }
                         }
                         .tint(.blue)
-                       
+                        
                     }
                 }
             }
-                    
+            
             
             .listStyle(PlainListStyle())
             .searchable(text: $query)
@@ -65,11 +65,10 @@ struct ContentView: View {
     }
     
     
-    struct ContentView_Previews: PreviewProvider {
+    struct ChatOverView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
 }
-    
 

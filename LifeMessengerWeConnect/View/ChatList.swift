@@ -23,12 +23,17 @@ struct ChatList: View {
                     HStack{
                         Text(chat.person.name)
                             .bold()
+                        
                         Spacer()
-                        Text(chat.messages.last?.date.DateString() ?? "")
+                        Text(chat.messages.last?.date.descriptiveString() ?? "")
                     }
                     
                     HStack{
                         Text(chat.messages.last?.text ?? "")
+                            .foregroundColor(.gray)
+                            .lineLimit(2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.trailing, 40)
                     
                     }
                 }
@@ -37,6 +42,8 @@ struct ChatList: View {
                     .foregroundColor(chat.hasUnreadMessage ? .blue : .clear)
                     .frame(width: 18, height: 18)
                     .frame(maxWidth: .infinity, alignment: .trailing )
+                    .offset(x: 0 , y: 12)
+                    .padding(2)
             }
         }
         .frame(height: 80)
@@ -47,6 +54,6 @@ struct ChatList: View {
 
 struct ChatList_Previews: PreviewProvider {
     static var previews: some View {
-        ChatList(chat: Chat.lifeMessengerChat[0])
+        ChatList(chat: Chat.lifeMessengerChat[1])
     }
 }
