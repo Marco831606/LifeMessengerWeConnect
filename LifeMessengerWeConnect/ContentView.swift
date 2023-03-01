@@ -8,68 +8,42 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    let chats = Chat.lifeMessengerChat
-    
-    @StateObject var viewModel = ChatViewModel()
-    
-    @State private var query = ""
+    @StateObject var messagesManager = MessagesManager()
     
     var body: some View {
-        
-        NavigationView{
-            
-            List{
-                ForEach(viewModel.getSortedFilteredChats(query: query)) { chat in
-                    
-                    ZStack {
-                        
-                        ChatList(chat: chat)
-                        
-                        NavigationLink(destination: {
-                            ChatView(chat: chat)
-                                .environmentObject(viewModel)
-                                .foregroundColor(.blue)
-                        }) {
-                            EmptyView()
+        VStack {
+            VStack {
+                TitleRow()
+                
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        ForEach(messagesManager.messages, id: \.id) {
+                            message in MessageBubble(message: message)
                         }
-                        //     .buttonStyle(PlainListStyle())
-                        .frame(width: 0)
-                        .opacity(0)
-                        
                     }
-                    .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                        Button(action: {
-                            viewModel.markAsUnread(!chat.hasUnreadMessage, chat: chat)
-                        }) {
-                            if chat.hasUnreadMessage {
-                                Label("Read", systemImage: "text.bubble")
-                            }else{
-                                Label("Unread", systemImage: "circle.fill")
-                            }
+                    .padding(.top, 12)
+                    .background(.gray)
+                    .cornerRadius(20, corners: [.topLeft, .topRight])
+                    .onChange(of: messagesManager.lastMessageId) { id in
+                        withAnimation {
+                            proxy.scrollTo(id, anchor: .bottom)
                         }
-                        .tint(.blue)
-                       
                     }
                 }
+                
             }
-                    
+            .background(Color.blue)
             
-            .listStyle(PlainListStyle())
-            .searchable(text: $query)
-            .navigationTitle("Chats")
-            .navigationBarItems(trailing: Button(action:{}) {
-                Image(systemName: "square.and.pencil")
-            })
+            
+            MessageField()
+                .environmentObject(messagesManager)
         }
+        .background(Color.blue)
     }
-    
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
     
-
