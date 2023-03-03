@@ -9,19 +9,23 @@ import SwiftUI
 
 struct UserRowView: View {
     var body: some View {
-        HStack{
+        HStack(spacing: 12){
             Circle()
                 .frame(width: 50, height: 50)
+                .foregroundColor(Color.black)
             VStack(alignment: .leading, spacing: 4){
                 Text("Michaela Klein")
                     .font(.subheadline).bold()
+                    .foregroundColor(Color.black)
+                    
                 
             }
             Spacer()
         }
-        .padding()
-        .background(Color.blue)
-        .cornerRadius(40)
+        .padding(.horizontal)
+        .padding(.vertical,4)
+       
+        
     }
 }
 

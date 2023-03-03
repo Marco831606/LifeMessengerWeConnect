@@ -8,42 +8,61 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var messagesManager = MessagesManager()
+    @State private var showMenu = false
     
     var body: some View {
-        VStack {
-            VStack {
-                TitleRow()
-                
-                ScrollViewReader { proxy in
-                    ScrollView {
-                        ForEach(messagesManager.messages, id: \.id) {
-                            message in MessageBubble(message: message)
-                        }
-                    }
-                    .padding(.top, 12)
-                    .background(.gray)
-                    .cornerRadius(20, corners: [.topLeft, .topRight])
-                    .onChange(of: messagesManager.lastMessageId) { id in
-                        withAnimation {
-                            proxy.scrollTo(id, anchor: .bottom)
-                        }
+        ZStack(alignment: .topLeading) {
+            
+            
+            MainTabView()
+                .navigationBarHidden(showMenu)
+            if showMenu {
+                ZStack {
+                    Color(.white)
+                .opacity(showMenu ? 0.25 : 0.0)
+                }.onTapGesture {
+                    withAnimation(.easeInOut) {
+                        showMenu = false
                     }
                 }
-                
+                ignoresSafeArea()
             }
-            .background(Color.blue)
             
+            SideMenuView()
+                .frame(width: 300)
+                .offset(x: showMenu ? 0 : -300, y: 0)
+                .background(showMenu ? Color.white : Color.clear)
             
-            MessageField()
-                .environmentObject(messagesManager)
         }
-        .background(Color.blue)
+        
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    withAnimation(.easeInOut) {
+                        showMenu.toggle()
+                    }
+                } label: {
+                    Circle()
+                        .frame(width: 32, height: 32)
+                }
+            }
+        }
     }
 }
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
+        
+        
+        
+        
+        
+        
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
     
+

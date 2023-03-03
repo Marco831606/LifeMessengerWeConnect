@@ -18,6 +18,7 @@ struct UserProfil: View {
     var settings = ["Male", "Female", "Diverse"]
     var edit: Bool = false
     var body: some View {
+        
         VStack{
             
             
@@ -26,7 +27,7 @@ struct UserProfil: View {
             
             
             Text ("Dein Profil")
-                .foregroundColor(.green)
+                
                 
             
             Image("")
@@ -71,18 +72,23 @@ struct UserProfil: View {
                     }
                     
                     Toggle(isOn: $schrift) {
-                        Text("Schrift Größe ändern")
+                        Text("Schriftgröße ändern")
                         if(schrift) {
                         }
                     }
+                    
                 }
+                
             }
+            
         
         }
-        .background(Color.blue)
+        .background(Color.green)
         .offset(x: 5, y: 2)
         .cornerRadius(50)
+        
     }
+        
         
             
             struct UserProfil_Previews: PreviewProvider {
