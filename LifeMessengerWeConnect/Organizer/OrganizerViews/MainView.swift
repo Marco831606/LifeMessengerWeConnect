@@ -1,20 +1,27 @@
 //
-//  OrganizerView.swift
+//  MainView.swift
 //  LifeMessengerWeConnect
 //
-//  Created by Marco Molisano on 22.02.23.
+//  Created by Marco Molisano on 14.03.23.
 //
 
 import SwiftUI
 
-struct OrganizerView: View {
+import SwiftUI
+
+struct MainView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct OrganizerView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        OrganizerView()
+        MainView()
     }
 }
+    
+    
+
+
+

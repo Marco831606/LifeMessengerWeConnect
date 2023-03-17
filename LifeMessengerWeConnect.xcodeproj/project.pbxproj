@@ -26,9 +26,35 @@
 		4643946E29A3924A00C35040 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643946D29A3924A00C35040 /* SplashScreenView.swift */; };
 		4643947B29A62AD600C35040 /* OrganizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643947A29A62AD600C35040 /* OrganizerView.swift */; };
 		467987DD29B23C16002CFC5A /* SideMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467987DC29B23C16002CFC5A /* SideMenuOption.swift */; };
+		467987E129C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467987DF29C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld */; };
+		467987E529C06B39002CFC5A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467987E429C06B39002CFC5A /* MainView.swift */; };
+		467987E729C06DA2002CFC5A /* OrganizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467987E629C06DA2002CFC5A /* OrganizeViewModel.swift */; };
+		467987FD29C08AB4002CFC5A /* NotoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987EA29C08AB3002CFC5A /* NotoSans-LightItalic.ttf */; };
+		467987FE29C08AB4002CFC5A /* NotoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987EB29C08AB3002CFC5A /* NotoSans-ExtraLightItalic.ttf */; };
+		467987FF29C08AB4002CFC5A /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987EC29C08AB3002CFC5A /* NotoSans-ExtraBold.ttf */; };
+		4679880029C08AB4002CFC5A /* NotoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987ED29C08AB3002CFC5A /* NotoSans-ExtraBoldItalic.ttf */; };
+		4679880129C08AB4002CFC5A /* NotoSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987EE29C08AB3002CFC5A /* NotoSans-ThinItalic.ttf */; };
+		4679880229C08AB4002CFC5A /* NotoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987EF29C08AB3002CFC5A /* NotoSans-ExtraLight.ttf */; };
+		4679880329C08AB4002CFC5A /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F029C08AB3002CFC5A /* NotoSans-BoldItalic.ttf */; };
+		4679880429C08AB4002CFC5A /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F129C08AB3002CFC5A /* NotoSans-Medium.ttf */; };
+		4679880529C08AB4002CFC5A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 467987F229C08AB3002CFC5A /* OFL.txt */; };
+		4679880629C08AB4002CFC5A /* NotoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F329C08AB4002CFC5A /* NotoSans-SemiBoldItalic.ttf */; };
+		4679880729C08AB4002CFC5A /* NotoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F429C08AB4002CFC5A /* NotoSans-Light.ttf */; };
+		4679880829C08AB4002CFC5A /* NotoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F529C08AB4002CFC5A /* NotoSans-BlackItalic.ttf */; };
+		4679880929C08AB4002CFC5A /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F629C08AB4002CFC5A /* NotoSans-Bold.ttf */; };
+		4679880A29C08AB4002CFC5A /* NotoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F729C08AB4002CFC5A /* NotoSans-Black.ttf */; };
+		4679880B29C08AB4002CFC5A /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F829C08AB4002CFC5A /* NotoSans-Italic.ttf */; };
+		4679880C29C08AB4002CFC5A /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987F929C08AB4002CFC5A /* NotoSans-MediumItalic.ttf */; };
+		4679880D29C08AB4002CFC5A /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987FA29C08AB4002CFC5A /* NotoSans-SemiBold.ttf */; };
+		4679880E29C08AB4002CFC5A /* NotoSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987FB29C08AB4002CFC5A /* NotoSans-Thin.ttf */; };
+		4679880F29C08AB4002CFC5A /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 467987FC29C08AB4002CFC5A /* NotoSans-Regular.ttf */; };
+		4679881229C08D21002CFC5A /* NotoSans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679881129C08D21002CFC5A /* NotoSans.swift */; };
 		46CAE26429B225BA0034D1A0 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CAE26329B225BA0034D1A0 /* TitleRow.swift */; };
 		46CAE26629B2270B0034D1A0 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CAE26529B2270B0034D1A0 /* StatusView.swift */; };
 		46CAE26829B229290034D1A0 /* StatusTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CAE26729B229290034D1A0 /* StatusTextView.swift */; };
+		46DA53F929C1EE6200180763 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA53F829C1EE6200180763 /* DateModel.swift */; };
+		46DA547929C479D700180763 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA547829C479D700180763 /* TaskModel.swift */; };
+		46DA547B29C479E100180763 /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA547A29C479E100180763 /* TaskCategory.swift */; };
 		46EACBF729ACD09300B1F4AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643943929A2715300C35040 /* ContentView.swift */; };
 		46EACBF829ACD0C500B1F4AC /* LifeMessengerWeConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */; };
 		46EACBFC29ACD11100B1F4AC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EACBFB29ACD11100B1F4AC /* Message.swift */; };
@@ -81,9 +107,36 @@
 		4643946D29A3924A00C35040 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		4643947A29A62AD600C35040 /* OrganizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizerView.swift; sourceTree = "<group>"; };
 		467987DC29B23C16002CFC5A /* SideMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOption.swift; sourceTree = "<group>"; };
+		467987E029C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrganizerManagementCoreData.xcdatamodel; sourceTree = "<group>"; };
+		467987E429C06B39002CFC5A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		467987E629C06DA2002CFC5A /* OrganizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizeViewModel.swift; sourceTree = "<group>"; };
+		467987EA29C08AB3002CFC5A /* NotoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		467987EB29C08AB3002CFC5A /* NotoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		467987EC29C08AB3002CFC5A /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		467987ED29C08AB3002CFC5A /* NotoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		467987EE29C08AB3002CFC5A /* NotoSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		467987EF29C08AB3002CFC5A /* NotoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		467987F029C08AB3002CFC5A /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		467987F129C08AB3002CFC5A /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		467987F229C08AB3002CFC5A /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		467987F329C08AB4002CFC5A /* NotoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		467987F429C08AB4002CFC5A /* NotoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Light.ttf"; sourceTree = "<group>"; };
+		467987F529C08AB4002CFC5A /* NotoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		467987F629C08AB4002CFC5A /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		467987F729C08AB4002CFC5A /* NotoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Black.ttf"; sourceTree = "<group>"; };
+		467987F829C08AB4002CFC5A /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		467987F929C08AB4002CFC5A /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		467987FA29C08AB4002CFC5A /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		467987FB29C08AB4002CFC5A /* NotoSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Thin.ttf"; sourceTree = "<group>"; };
+		467987FC29C08AB4002CFC5A /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		4679881029C08B98002CFC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4679881129C08D21002CFC5A /* NotoSans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotoSans.swift; sourceTree = "<group>"; };
 		46CAE26329B225BA0034D1A0 /* TitleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 		46CAE26529B2270B0034D1A0 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		46CAE26729B229290034D1A0 /* StatusTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTextView.swift; sourceTree = "<group>"; };
+		46DA53F829C1EE6200180763 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		46DA547829C479D700180763 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		46DA547A29C479E100180763 /* TaskCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
 		46EACBFB29ACD11100B1F4AC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		46EACBFD29ACD19000B1F4AC /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		46EACBFF29ACDB2B00B1F4AC /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
@@ -133,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				460AEF4F29B0DE9600305824 /* MainTabView.swift */,
-				467987DC29B23C16002CFC5A /* SideMenuOption.swift */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -177,21 +229,23 @@
 		4643943629A2715300C35040 /* LifeMessengerWeConnect */ = {
 			isa = PBXGroup;
 			children = (
+				4679881029C08B98002CFC5A /* Info.plist */,
+				460AEF4E29B0DE7F00305824 /* MainTab */,
 				460AEF5429B0E11300305824 /* Media */,
 				460AEF5129B0E0D000305824 /* Events */,
 				460AEF4529AFC6BE00305824 /* Explorer */,
-				460AEF3E29AFC49A00305824 /* GoogleService-Info.plist */,
-				4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */,
-				46EACBF429ACD06900B1F4AC /* Model */,
+				46EACBF429ACD06900B1F4AC /* ChatModel */,
 				46EACBBB29ACC84500B1F4AC /* Components */,
 				4643947729A62A9B00C35040 /* Organizer */,
-				4643946F29A394B400C35040 /* ViewModel */,
-				4643946829A38EA900C35040 /* View */,
+				4643946F29A394B400C35040 /* ChatvViewModels */,
+				4643946829A38EA900C35040 /* ChatViews */,
 				4643943929A2715300C35040 /* ContentView.swift */,
 				46EACC0A29ACF9D400B1F4AC /* MessagesManager.swift */,
 				4643943B29A2715300C35040 /* Assets.xcassets */,
 				4643943D29A2715300C35040 /* Preview Content */,
 				4643946D29A3924A00C35040 /* SplashScreenView.swift */,
+				4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */,
+				460AEF3E29AFC49A00305824 /* GoogleService-Info.plist */,
 			);
 			path = LifeMessengerWeConnect;
 			sourceTree = "<group>";
@@ -221,10 +275,10 @@
 			path = LifeMessengerWeConnectUITests;
 			sourceTree = "<group>";
 		};
-		4643946829A38EA900C35040 /* View */ = {
+		4643946829A38EA900C35040 /* ChatViews */ = {
 			isa = PBXGroup;
 			children = (
-				460AEF4E29B0DE7F00305824 /* MainTab */,
+				467987DC29B23C16002CFC5A /* SideMenuOption.swift */,
 				46EACBFF29ACDB2B00B1F4AC /* ExtensionsView.swift */,
 				46EACC2229AF456C00B1F4AC /* ProfileView.swift */,
 				46EACC2629AF57D500B1F4AC /* UserRowView.swift */,
@@ -234,24 +288,82 @@
 				46CAE26529B2270B0034D1A0 /* StatusView.swift */,
 				46CAE26729B229290034D1A0 /* StatusTextView.swift */,
 			);
-			path = View;
+			path = ChatViews;
 			sourceTree = "<group>";
 		};
-		4643946F29A394B400C35040 /* ViewModel */ = {
+		4643946F29A394B400C35040 /* ChatvViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				460AEF4629B0CD4900305824 /* SideMenuViewModel.swift */,
 				4625E86F29B215A200253BEA /* TweetFilterViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ChatvViewModels;
 			sourceTree = "<group>";
 		};
 		4643947729A62A9B00C35040 /* Organizer */ = {
 			isa = PBXGroup;
 			children = (
-				4643947A29A62AD600C35040 /* OrganizerView.swift */,
+				467987E929C08A21002CFC5A /* Model */,
+				467987E829C08A17002CFC5A /* Fonts */,
+				467987E329C06967002CFC5A /* OrganizerViews */,
+				467987E229C0692F002CFC5A /* OrganizerViewModel */,
+				467987DF29C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld */,
 			);
 			path = Organizer;
+			sourceTree = "<group>";
+		};
+		467987E229C0692F002CFC5A /* OrganizerViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				467987E629C06DA2002CFC5A /* OrganizeViewModel.swift */,
+			);
+			path = OrganizerViewModel;
+			sourceTree = "<group>";
+		};
+		467987E329C06967002CFC5A /* OrganizerViews */ = {
+			isa = PBXGroup;
+			children = (
+				467987E429C06B39002CFC5A /* MainView.swift */,
+				4643947A29A62AD600C35040 /* OrganizerView.swift */,
+			);
+			path = OrganizerViews;
+			sourceTree = "<group>";
+		};
+		467987E829C08A17002CFC5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				467987EF29C08AB3002CFC5A /* NotoSans-ExtraLight.ttf */,
+				467987ED29C08AB3002CFC5A /* NotoSans-ExtraBoldItalic.ttf */,
+				467987EC29C08AB3002CFC5A /* NotoSans-ExtraBold.ttf */,
+				467987F029C08AB3002CFC5A /* NotoSans-BoldItalic.ttf */,
+				467987F629C08AB4002CFC5A /* NotoSans-Bold.ttf */,
+				467987F529C08AB4002CFC5A /* NotoSans-BlackItalic.ttf */,
+				467987F729C08AB4002CFC5A /* NotoSans-Black.ttf */,
+				467987EB29C08AB3002CFC5A /* NotoSans-ExtraLightItalic.ttf */,
+				467987F829C08AB4002CFC5A /* NotoSans-Italic.ttf */,
+				467987F429C08AB4002CFC5A /* NotoSans-Light.ttf */,
+				467987EA29C08AB3002CFC5A /* NotoSans-LightItalic.ttf */,
+				467987F129C08AB3002CFC5A /* NotoSans-Medium.ttf */,
+				467987F929C08AB4002CFC5A /* NotoSans-MediumItalic.ttf */,
+				467987FC29C08AB4002CFC5A /* NotoSans-Regular.ttf */,
+				467987F229C08AB3002CFC5A /* OFL.txt */,
+				467987FA29C08AB4002CFC5A /* NotoSans-SemiBold.ttf */,
+				467987F329C08AB4002CFC5A /* NotoSans-SemiBoldItalic.ttf */,
+				467987FB29C08AB4002CFC5A /* NotoSans-Thin.ttf */,
+				467987EE29C08AB3002CFC5A /* NotoSans-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		467987E929C08A21002CFC5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46DA547A29C479E100180763 /* TaskCategory.swift */,
+				46DA547829C479D700180763 /* TaskModel.swift */,
+				4679881129C08D21002CFC5A /* NotoSans.swift */,
+				46DA53F829C1EE6200180763 /* DateModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		46EACBBB29ACC84500B1F4AC /* Components */ = {
@@ -264,12 +376,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		46EACBF429ACD06900B1F4AC /* Model */ = {
+		46EACBF429ACD06900B1F4AC /* ChatModel */ = {
 			isa = PBXGroup;
 			children = (
 				46EACBFB29ACD11100B1F4AC /* Message.swift */,
 			);
-			path = Model;
+			path = ChatModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +495,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467987FD29C08AB4002CFC5A /* NotoSans-LightItalic.ttf in Resources */,
+				467987FE29C08AB4002CFC5A /* NotoSans-ExtraLightItalic.ttf in Resources */,
+				467987FF29C08AB4002CFC5A /* NotoSans-ExtraBold.ttf in Resources */,
+				4679880029C08AB4002CFC5A /* NotoSans-ExtraBoldItalic.ttf in Resources */,
+				4679880129C08AB4002CFC5A /* NotoSans-ThinItalic.ttf in Resources */,
+				4679880229C08AB4002CFC5A /* NotoSans-ExtraLight.ttf in Resources */,
+				4679880329C08AB4002CFC5A /* NotoSans-BoldItalic.ttf in Resources */,
+				4679880429C08AB4002CFC5A /* NotoSans-Medium.ttf in Resources */,
+				4679880529C08AB4002CFC5A /* OFL.txt in Resources */,
+				4679880629C08AB4002CFC5A /* NotoSans-SemiBoldItalic.ttf in Resources */,
+				4679880729C08AB4002CFC5A /* NotoSans-Light.ttf in Resources */,
+				4679880829C08AB4002CFC5A /* NotoSans-BlackItalic.ttf in Resources */,
+				4679880929C08AB4002CFC5A /* NotoSans-Bold.ttf in Resources */,
+				4679880A29C08AB4002CFC5A /* NotoSans-Black.ttf in Resources */,
+				4679880B29C08AB4002CFC5A /* NotoSans-Italic.ttf in Resources */,
+				4679880C29C08AB4002CFC5A /* NotoSans-MediumItalic.ttf in Resources */,
+				4679880D29C08AB4002CFC5A /* NotoSans-SemiBold.ttf in Resources */,
+				4679880E29C08AB4002CFC5A /* NotoSans-Thin.ttf in Resources */,
+				4679880F29C08AB4002CFC5A /* NotoSans-Regular.ttf in Resources */,
 				4643943F29A2715300C35040 /* Preview Assets.xcassets in Resources */,
 				4643943C29A2715300C35040 /* Assets.xcassets in Resources */,
 				460AEF3F29AFC49A00305824 /* GoogleService-Info.plist in Resources */,
@@ -411,12 +542,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				46EACC2729AF57D500B1F4AC /* UserRowView.swift in Sources */,
+				467987E529C06B39002CFC5A /* MainView.swift in Sources */,
 				460AEF5629B0E13C00305824 /* PictureAndVideoGalerieView.swift in Sources */,
+				467987E129C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld in Sources */,
+				467987E729C06DA2002CFC5A /* OrganizeViewModel.swift in Sources */,
 				467987DD29B23C16002CFC5A /* SideMenuOption.swift in Sources */,
+				4679881229C08D21002CFC5A /* NotoSans.swift in Sources */,
 				46CAE26629B2270B0034D1A0 /* StatusView.swift in Sources */,
 				4643947B29A62AD600C35040 /* OrganizerView.swift in Sources */,
+				46DA547B29C479E100180763 /* TaskCategory.swift in Sources */,
+				46DA53F929C1EE6200180763 /* DateModel.swift in Sources */,
 				460AEF4B29B0CFF100305824 /* SideMenuView.swift in Sources */,
 				4625E87229B21EDA00253BEA /* ChatView.swift in Sources */,
+				46DA547929C479D700180763 /* TaskModel.swift in Sources */,
 				4625E87029B215A200253BEA /* TweetFilterViewModel.swift in Sources */,
 				460AEF5329B0E0E900305824 /* EventView.swift in Sources */,
 				460AEF4929B0CFD500305824 /* SideMenuRowView.swift in Sources */,
@@ -595,6 +733,7 @@
 				DEVELOPMENT_TEAM = 8LQDZ5W4TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeMessengerWeConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -624,6 +763,7 @@
 				DEVELOPMENT_TEAM = 8LQDZ5W4TX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LifeMessengerWeConnect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -782,6 +922,19 @@
 			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		467987DF29C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				467987E029C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodel */,
+			);
+			currentVersion = 467987E029C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodel */;
+			path = OrganizerManagementCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4643942C29A2715300C35040 /* Project object */;
 }

@@ -12,7 +12,7 @@ struct ExplorerView: View {
     
     var body: some View {
         
-        NavigationView{
+        NavigationStack{
             VStack{
                 HStack {
                     ForEach(TweetFilterViewModel.allCases, id: \.rawValue) { item in
@@ -64,7 +64,7 @@ struct ExplorerView: View {
             .navigationTitle("Chats")
             .offset(x: 5, y: 50)
             .navigationBarTitleDisplayMode(.inline)
-            .background(Color(.systemGreen))
+            .background(Color(.systemBlue))
             
             
             
