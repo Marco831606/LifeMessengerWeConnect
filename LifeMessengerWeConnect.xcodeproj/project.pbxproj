@@ -55,6 +55,7 @@
 		46DA53F929C1EE6200180763 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA53F829C1EE6200180763 /* DateModel.swift */; };
 		46DA547929C479D700180763 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA547829C479D700180763 /* TaskModel.swift */; };
 		46DA547B29C479E100180763 /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA547A29C479E100180763 /* TaskCategory.swift */; };
+		46DA54BD29C88ED800180763 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA54BC29C88ED800180763 /* AddTaskView.swift */; };
 		46EACBF729ACD09300B1F4AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643943929A2715300C35040 /* ContentView.swift */; };
 		46EACBF829ACD0C500B1F4AC /* LifeMessengerWeConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643943729A2715300C35040 /* LifeMessengerWeConnectApp.swift */; };
 		46EACBFC29ACD11100B1F4AC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EACBFB29ACD11100B1F4AC /* Message.swift */; };
@@ -137,6 +138,7 @@
 		46DA53F829C1EE6200180763 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		46DA547829C479D700180763 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		46DA547A29C479E100180763 /* TaskCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
+		46DA54BC29C88ED800180763 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		46EACBFB29ACD11100B1F4AC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		46EACBFD29ACD19000B1F4AC /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		46EACBFF29ACDB2B00B1F4AC /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			children = (
 				467987E429C06B39002CFC5A /* MainView.swift */,
 				4643947A29A62AD600C35040 /* OrganizerView.swift */,
+				46DA54BC29C88ED800180763 /* AddTaskView.swift */,
 			);
 			path = OrganizerViews;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				46EACC2729AF57D500B1F4AC /* UserRowView.swift in Sources */,
 				467987E529C06B39002CFC5A /* MainView.swift in Sources */,
 				460AEF5629B0E13C00305824 /* PictureAndVideoGalerieView.swift in Sources */,
+				46DA54BD29C88ED800180763 /* AddTaskView.swift in Sources */,
 				467987E129C0684B002CFC5A /* OrganizerManagementCoreData.xcdatamodeld in Sources */,
 				467987E729C06DA2002CFC5A /* OrganizeViewModel.swift in Sources */,
 				467987DD29B23C16002CFC5A /* SideMenuOption.swift in Sources */,

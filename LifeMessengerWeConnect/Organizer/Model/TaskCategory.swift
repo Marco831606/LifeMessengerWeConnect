@@ -20,13 +20,13 @@ enum Category: String,CaseIterable{
         case .Schule:
             return Color("Green")
         case .Freizeit:
-            return Color("Hellblau")
+            return Color("Green1")
         case .Termine:
-            return Color("Lila")
+            return Color("MBlue")
         case .Urlaub:
             return Color("Orange")
         case .Finanzen:
-            return Color("Mblue")
+            return Color("Lila")
             
             
  
