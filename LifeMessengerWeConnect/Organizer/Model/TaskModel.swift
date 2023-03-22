@@ -16,7 +16,7 @@ struct Task: Identifiable{
 }
 
 var OrganizerTasks: [Task] = [
-    .init(dateAdded: Date(timeIntervalSince1970: 1672829809), taskName: "Deutsch" , taskDescription: "", taskCategory: .Schule),
+    .init(dateAdded: Date(timeIntervalSince1970: 1672829809), taskName:"Deutsch" , taskDescription: "", taskCategory: .Schule),
     .init(dateAdded: Date(timeIntervalSince1970: 1672833409), taskName:"Mathe", taskDescription: "", taskCategory: .Freizeit),
     .init(dateAdded: Date(timeIntervalSince1970: 1672833409), taskName:"Englisch", taskDescription: "", taskCategory: .Termine),
     .init(dateAdded: Date(timeIntervalSince1970: 1672833409), taskName:"Bio", taskDescription: "", taskCategory: .Urlaub),

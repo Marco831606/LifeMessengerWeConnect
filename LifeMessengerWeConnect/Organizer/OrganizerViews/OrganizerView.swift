@@ -12,7 +12,9 @@ struct OrganizerView: View {
     @State private var currentDay: Date = .init()
     @State private var tasks: [Task] = OrganizerTasks
     @State private var addNewTask: Bool = false
+    
     var body: some View {
+       
         
         ScrollView(.vertical, showsIndicators: false) {
             TimelineView()
@@ -23,10 +25,14 @@ struct OrganizerView: View {
             HeaderView()
         }
         .fullScreenCover(isPresented: $addNewTask) {
+            AddTaskView { task in
+                
+                tasks.append(task)
+                
+            }
             
         }
     }
-    
     @ViewBuilder
     func TimelineView() -> some View {
         ScrollViewReader { proxy in
@@ -51,13 +57,17 @@ struct OrganizerView: View {
             Text(date.toString("h a"))
                 .nSans(14, .regular)
                 .frame(width: 45, alignment: .leading)
+        }
+        .hAlign(.leading)
+        .padding(.vertical,15)
+    
             
             let calendar = Calendar.current
             let filteredTask = tasks.filter {
                 if let hour = calendar.dateComponents([.hour], from: date).hour,
                    let taskHour = calendar.dateComponents([.hour], from:
                    $0.dateAdded).hour,
-                hour == taskHour && calendar.isDate($0.dateAdded, inSameDayAs: date) {
+                hour == taskHour && calendar.isDate($0.dateAdded, inSameDayAs: currentDay) {
                     return true
                     
                 }
@@ -80,10 +90,7 @@ struct OrganizerView: View {
                 
             }
         }
-        Spacer()
-            
-        
-    }
+    
     
     @ViewBuilder
     func TaskRow(_ task: Task) -> some View {
@@ -97,7 +104,7 @@ struct OrganizerView: View {
                 foregroundColor(task.taskCategory.color.opacity(0.8))
             }
         }
-        Spacer()
+            .hAlign(.leading)
             .padding(12)
             .background {
                 ZStack(alignment: .leading) {
@@ -181,12 +188,11 @@ struct OrganizerView: View {
                     Text(weekDay.string.prefix(3))
                         .nSans(12, .medium)
                     Text(weekDay.date.toString("dd"))
-                        .nSans(16, .regular)
-                    
-                }
+                        .nSans(16, status ? .medium : .regular)
+                    }
             
-                Spacer()
-                    .foregroundColor(status ? Color("Blue") : .gray)
+                    .hAlign(.center)
+                    .foregroundColor(status ? Color("Red") : .gray)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.3)) {
@@ -196,7 +202,7 @@ struct OrganizerView: View {
                 }
         }
         .padding(.vertical, 10)
-        .padding(.horizontal)
+        .padding(.horizontal, -15)
     }
     
     }

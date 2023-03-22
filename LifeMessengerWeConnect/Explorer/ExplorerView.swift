@@ -61,7 +61,7 @@ struct ExplorerView: View {
             }
             
             
-            .navigationTitle("Chats")
+            .navigationTitle("")
             .offset(x: 5, y: 50)
             .navigationBarTitleDisplayMode(.inline)
             .background(Color(.systemBlue))

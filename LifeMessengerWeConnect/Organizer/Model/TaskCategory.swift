@@ -18,15 +18,16 @@ enum Category: String,CaseIterable{
     var color: Color{
         switch self {
         case .Schule:
-            return Color("Green")
+            return Color("Skyblue")
         case .Freizeit:
-            return Color("Green1")
+            return Color("Red")
         case .Termine:
             return Color("MBlue")
         case .Urlaub:
             return Color("Orange")
         case .Finanzen:
             return Color("Lila")
+            
             
             
  

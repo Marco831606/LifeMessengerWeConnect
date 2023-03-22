@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ChatView: View {
-    
+    @Environment(\.dismiss) private var dismiss
     @StateObject var messagesManager = MessagesManager()
     
     var body: some View {
      
         VStack {
-            VStack {
+            VStack(alignment: .leading, spacing: 10) {
+                Button{
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(.white)
+                        .contentShape(Rectangle())
+                }
                 TitleRow()
                 
                 ScrollViewReader { proxy in
