@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct EventView: View {
+    
+    @StateObject var viewModel = EventViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            AsyncImage(url: URL(string: viewModel.eventData ?? ""))
+            Text("Events")
+            Image(systemName: "party.popper")
+                .imageScale(.large)
+                .foregroundColor(.green)
+        }
     }
 }
 

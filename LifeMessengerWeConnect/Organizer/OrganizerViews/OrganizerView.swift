@@ -101,7 +101,7 @@ struct OrganizerView: View {
             if task.taskDescription != "" {
                 Text(task.taskDescription)
                     .nSans(14, .light)
-                foregroundColor(task.taskCategory.color.opacity(0.8))
+                    .foregroundColor(task.taskCategory.color.opacity(0.8))
             }
         }
             .hAlign(.leading)
