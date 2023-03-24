@@ -14,18 +14,18 @@ import Foundation
     init(){
         fetchEvents(completion: { eventData in
             self.eventData = eventData.artist ?? ""
-            self.eventData = eventData.location ?? ""
+            self.eventData = eventData.place ?? ""
             self.eventData = eventData.events ?? ""
         })
     }
     
-    let baseUrl = ""
+    let baseUrl = "https://musicbrainz.org/ws/2/"
     
     func fetchEvents(completion: @escaping(EventData) -> Void){
         
         // 1.url
         
-        let url = URL(string: baseUrl + "")
+        let url = URL(string: baseUrl + "event?query=*&limit=100&offset=1")
         guard url != nil else {return}
         
         // 2.session

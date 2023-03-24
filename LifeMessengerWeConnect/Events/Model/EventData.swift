@@ -9,8 +9,9 @@ import Foundation
 
 struct EventData: Codable{
     
+    
     var artist: String?
-    var location: String?
+    var place: String?
     var events: String?
     
     }

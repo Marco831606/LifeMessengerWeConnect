@@ -83,7 +83,7 @@ struct UserProfil: View {
             
         
         }
-        .background(Color.green)
+      //  .background(Color.green)
         .offset(x: 5, y: 2)
         .cornerRadius(50)
         
