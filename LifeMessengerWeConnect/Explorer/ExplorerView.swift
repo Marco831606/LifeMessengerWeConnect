@@ -64,7 +64,7 @@ struct ExplorerView: View {
             .navigationTitle("")
             .offset(x: 5, y: 50)
             .navigationBarTitleDisplayMode(.inline)
-            .background(Color(.systemBlue))
+            .background(Color.white)
             
             
             

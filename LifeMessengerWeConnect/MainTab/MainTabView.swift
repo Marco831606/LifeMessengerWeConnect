@@ -30,7 +30,7 @@ struct MainTabView: View {
                     Image(systemName: "folder.badge.person.crop")
                 }.tag(1)
             
-            EventView()
+            AlbumListView()
                 .onTapGesture {
                     self.selectionIndex = 2
                 }
