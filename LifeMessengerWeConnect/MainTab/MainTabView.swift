@@ -13,6 +13,7 @@ struct MainTabView: View {
     var body: some View {
         
         TabView(selection: $selectionIndex) {
+        
             
             ExplorerView()
                 .onTapGesture {
@@ -43,8 +44,16 @@ struct MainTabView: View {
                     self.selectionIndex = 3
                 }
                 .tabItem {
-                    Image(systemName: "text.insert")
+                    Image(systemName: "camera")
                 }.tag(3)
+            
+            UserProfil()
+                .onTapGesture {
+                    self.selectionIndex = 4
+                }
+                .tabItem {
+                    Image(systemName: "gearshape")
+                }.tag(4)
             
         }
         

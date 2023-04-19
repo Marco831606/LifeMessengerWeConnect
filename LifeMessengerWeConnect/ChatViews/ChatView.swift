@@ -31,7 +31,7 @@ struct ChatView: View {
                         }
                     }
                     .padding(.top, 12)
-                    .background(.blue)
+                    .background(Color(.systemIndigo))
                     .cornerRadius(20, corners: [.topLeft, .topRight])
                     .onChange(of: messagesManager.lastMessageId) { id in
                         withAnimation {
@@ -41,13 +41,14 @@ struct ChatView: View {
                 }
                 
             }
-            .background(Color.gray)
+            .background(Color.black)
+            //.cornerRadius(25)
             
             
             MessageField()
                 .environmentObject(messagesManager)
         }
-        .background(Color.gray)
+        .background(Color.black)
     }
 }
        

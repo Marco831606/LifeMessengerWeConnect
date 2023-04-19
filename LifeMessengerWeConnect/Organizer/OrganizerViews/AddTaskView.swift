@@ -34,20 +34,22 @@ struct AddTaskView: View {
                 
                 Text("Mein Terminplaner")
                     .nSans(30, .light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .padding(.vertical,15)
                 
                 TitleView("Name")
                 TextField("Hier neuen Termin eintragen ", text: $taskName)
                     .nSans(15, .regular)
+                
                     .tint(.white)
                     .padding(.top, 2)
                 
                 Divider()
-                    .background(.brown)
+                    .background(.black)
                 
                 TitleView("Datum")
                     .padding(.top,15)
+                    
                 
                 Rectangle()
                     .fill(.white.opacity(0.7))
@@ -59,7 +61,7 @@ struct AddTaskView: View {
                             .nSans(16, .regular)
                         Image(systemName: "calendar")
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .overlay {
                                 DatePicker("", selection: $taskDate, displayedComponents: [.date])
                                     .blendMode(.destinationOver)
@@ -78,7 +80,7 @@ struct AddTaskView: View {
                             .nSans(16, .regular)
                         Image(systemName: "clock")
                             .font(.title)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .overlay {
                                 DatePicker("", selection: $taskDate, displayedComponents: [.hourAndMinute])
                                     .blendMode(.destinationOver)
@@ -111,15 +113,18 @@ struct AddTaskView: View {
                             .frame(width: animate ? size.width * 2 : 0, height: animate ?
                                    size.height * 2 : 0)
                             .offset(animate ? CGSize(width: -size.width / 2, height: -size.height / 2) : size)
+                            
                         
                     }
                     .clipped()
+                
+                    
                 }
                     .ignoresSafeArea()
             }
             
             VStack(alignment: .leading, spacing: 10) {
-                TitleView("Beschreibung", .gray)
+                TitleView("Beschreibung", .black)
                 TextField("über deinen Eintrag", text: $taskDescription)
                     .nSans(16, .regular)
                     .padding(.top,2)
@@ -128,8 +133,11 @@ struct AddTaskView: View {
                     .fill(.black.opacity(0.2))
                     .frame(height: 1)
                 
-                TitleView("Kategorie", .gray)
+                
+                TitleView("Kategorie", .black)
                     .padding(.top, 15)
+                
+                    
                 
                 LazyVGrid(columns: Array(repeating: .init(.flexible(),spacing: 20), count: 3)
                           ,spacing: 15) {
@@ -140,11 +148,14 @@ struct AddTaskView: View {
                             .padding(.vertical,5)
                             .background{
                                 RoundedRectangle(cornerRadius: 5, style: .continuous)
-                                    .fill(category.color.opacity(0.25))
+                                    .fill(category.color.opacity(0.2))
                             }
                             .foregroundColor(category.color)
+                            .background(Color.blue)
+                            .cornerRadius(25)
                             .contentShape(Rectangle())
                             .onTapGesture {
+                            
                                 
                                 guard !animate else
                                 {return}
@@ -161,6 +172,7 @@ struct AddTaskView: View {
                     }
                 }
                 .padding(.top,5)
+               
                 
                 Button {
                     
@@ -173,7 +185,7 @@ struct AddTaskView: View {
                 } label: {
                     Text("Termin Erstellen")
                         .nSans(16, .regular)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding(.vertical,15)
                         .hAlign(.center)
                         .background{

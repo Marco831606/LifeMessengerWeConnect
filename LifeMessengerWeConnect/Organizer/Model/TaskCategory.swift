@@ -14,6 +14,7 @@ enum Category: String,CaseIterable{
     case Termine = "Termine"
     case Urlaub = "Urlaub"
     case Finanzen = "Finanzen"
+    case Tagebuch = "Tagebuch"
     
     var color: Color{
         switch self {
@@ -27,6 +28,8 @@ enum Category: String,CaseIterable{
             return Color("Orange")
         case .Finanzen:
             return Color("Lila")
+        case.Tagebuch:
+            return Color("Green")
             
             
             

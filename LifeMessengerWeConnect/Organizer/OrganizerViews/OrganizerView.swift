@@ -18,16 +18,23 @@ struct OrganizerView: View {
         
         ScrollView(.vertical, showsIndicators: false) {
             TimelineView()
+                .background(Color.blue)
+                
             
             
         }
         .safeAreaInset(edge: .top, spacing: 0) {
             HeaderView()
+                .background(Color.blue)
+                .shadow(radius: 15)
+                .cornerRadius(25)
         }
+        .background(Color.blue)
         .fullScreenCover(isPresented: $addNewTask) {
             AddTaskView { task in
                 
                 tasks.append(task)
+                    
                 
             }
             
@@ -76,7 +83,7 @@ struct OrganizerView: View {
             
             if filteredTask.isEmpty{
                 Rectangle()
-                    .stroke(.gray.opacity(0.5), style: StrokeStyle(lineWidth: 0.5, lineCap: .butt, lineJoin: .bevel, dash: [5], dashPhase: 5))
+                    .stroke(.black.opacity(0.5), style: StrokeStyle(lineWidth: 0.5, lineCap: .butt, lineJoin: .bevel, dash: [5], dashPhase: 5))
                     .frame(height: 0.5)
                     .offset(y: 10)
             }else{
@@ -121,12 +128,13 @@ struct OrganizerView: View {
     @ViewBuilder
     func HeaderView() -> some View{
         VStack{
-        
             HStack{
+                
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Terminkalender")
                         .font(.title)
                         .foregroundColor(Color.black)
+                    
                     
                     Text("Herzlich Willkommen")
                         .foregroundColor(Color.black)
@@ -197,6 +205,7 @@ struct OrganizerView: View {
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.3)) {
                             currentDay = weekDay.date
+                                
                         }
                     }
                 }

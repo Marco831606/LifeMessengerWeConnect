@@ -28,7 +28,7 @@ struct TitleRow: View {
                     .font(.title).bold()
                 Text("Online")
                     .font(.caption)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.green)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -47,6 +47,7 @@ struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
             .background(Color("Skyblue"))
+            .cornerRadius(25)
     }
 }
 

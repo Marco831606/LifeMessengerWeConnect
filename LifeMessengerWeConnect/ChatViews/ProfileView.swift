@@ -13,6 +13,8 @@ struct UserProfil: View {
     @State var darkModus = false
     @State var leseModus = false
     @State var schrift = false
+    @State var textToAudio = false
+    @State var textToGB = false
     @State var genderChoice: Int = 0
     
     var settings = ["Male", "Female", "Diverse"]
@@ -76,7 +78,23 @@ struct UserProfil: View {
                         if(schrift) {
                         }
                     }
+                }
+                
+                Section("Barrierefreiheit") {
                     
+                    Toggle(isOn: $textToAudio) {
+                        Text("Text zu Audio")
+                        if (textToAudio) {
+                        }else{
+                        }
+                    }
+                    
+                    Toggle(isOn: $textToGB) {
+                        Text("Text zu Gebärdensprache")
+                        if(textToGB) {
+                        }else{
+                        }
+                    }
                 }
                 
             }
